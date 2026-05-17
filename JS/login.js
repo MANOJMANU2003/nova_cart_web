@@ -18,7 +18,7 @@
         alert("Login Successful. Welcome " + savedUser.username);
 
         localStorage.setItem("isLoggedIn", true);
-        window.location.href = "home.html";
+        window.location.href = "index.html";
       }
       else{
         alert("Invalid Email or Password");
