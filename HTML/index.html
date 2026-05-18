@@ -25,8 +25,17 @@
         <a href="#" class="text-dark text-decoration-none">Shop</a>
         <a href="About.html" class="text-dark text-decoration-none">About</a></div>
       <div class="ms-auto d-flex align-items-center gap-2">
-
         <button class="btn btn-outline-dark"><i class="bi bi-search"></i></button>
+        <select class="form-select" id="categoryFilter" onchange="filterProducts()" style="width: 150px">
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="sports">Sports</option>
+            <option value="beauty">Beauty</option>
+          </select>
+
+        
         <a href="login.html" class="btn btn-outline-dark">Login</a>
         <a href="register.html" class="btn btn-dark">Register</a>
 
@@ -145,7 +154,7 @@
           <span id="cartTotal">$0.00</span>
         </div>
         <button class="btn btn-outline-danger w-100 mb-3" onclick="clearCart()">Clear Cart</button>
-        <button class="btn btn-dark w-100"> Checkout</button>
+        <button class="btn btn-dark w-100" onclick="checkout()">Checkout</button>
       </div>
     </div>
   </div>
